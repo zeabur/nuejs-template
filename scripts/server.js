@@ -15,7 +15,7 @@ const TYPES = {
   css:  'text/css'
 }
 
-const PORT = 8080
+const PORT = process.env.PORT || 8080
 
 http.createServer(async (req, res) => {
   let { url } = req
